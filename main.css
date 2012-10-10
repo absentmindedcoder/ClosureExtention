@@ -1,0 +1,70 @@
+body{
+	font-family: arial, helvetica, monospace;
+	font-size: 14px;
+}
+
+textarea {
+   font-family: 'Lucida Sans Typewriter','Courier New',Courier,Fixed,monospace;
+   font-size: 12px;
+}
+
+#codeToMin{
+	float: left;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#scriptUrl{
+    width: 175px;
+    margin-right: 10px;
+}
+    
+#fileUrl{
+    padding-right: 16px;
+}
+    
+#compileLevel{
+    padding-right: 30px;
+}
+    
+#submit{
+    position: relative;
+    left: -3px;
+}
+
+#stats{
+	margin-top: 15px;
+}
+
+#origSize{
+	margin-left: 5px;
+}
+
+#minSize{
+	margin-left: 5px;
+}
+
+#sizeSaved{
+	margin-left: 14px;
+}
+
+#result{
+	margin-left: 20px;
+}
+
+#needSpace{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.label{
+	margin-right: 10px;
+}
+
+.error{
+	color: red;
+}
+
+.success{
+	color: green;
+}

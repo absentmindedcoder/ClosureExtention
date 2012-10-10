@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <link href="main.css" rel="stylesheet" type="text/css"/>
+  <body>
+    <div id="form">
+    <br>
+    <span id="compileLevel">Compile Level:</span>
+    <select id="compilationLevel" name="compilation_level">
+      <option value="WHITESPACE_ONLY">WHITESPACE_ONLY</option> 
+      <option value="SIMPLE_OPTIMIZATIONS">SIMPLE_OPTIMIZATIONS</option> 
+      <option value="ADVANCED_OPTIMIZATIONS">ADVANCED_OPTIMIZATIONS</option> 
+    </select>
+    <input type="hidden" name="output_format" value="json">
+    <input type="hidden" name="output_info" value="compiled_code">
+    <input type="hidden" name="output_info" value="errors">
+    <input type="hidden" name="output_info" value="warnings">
+    <input type="hidden" name="output_info" value="statistics">
+    <br>
+    <span id="fileUrl" class="label">External File Url:</span><input id="scriptUrl"><button type="button" id="addscript">Add Script</button>
+    <span id="fileAdded"></span>
+    <br>
+    <br>
+    <button id="submit">Minify!</button>
+    <br>
+    <span id="codeToMin">Code to minify:</span>
+    <textarea id="code" name="js_code" cols="54" rows="5">//enter code here
+    </textarea>
+    </div>
+    <div id="needSpace">
+    <span>Minified Code:</span><span id="result"></span>
+    </div>
+    <textarea id="output" cols="54" rows="5"></textarea>
+    <div id="stats">
+    	<span class="label">Original size:</span><span id="origSize"></span>
+    	<br>
+    	<span class="label">Minified size:</span><span id="minSize"></span>
+    	<br>
+    	<span class="label">Size saved:</span><span id="sizeSaved"></span>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
